@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/ackerman/demo_nodos.egg-info/PKG-INFO
+../build/ackerman/demo_nodos.egg-info/SOURCES.txt
+../build/ackerman/demo_nodos.egg-info/dependency_links.txt
+../build/ackerman/demo_nodos.egg-info/entry_points.txt
+../build/ackerman/demo_nodos.egg-info/requires.txt
+../build/ackerman/demo_nodos.egg-info/top_level.txt
+../build/ackerman/demo_nodos.egg-info/zip-safe
+ackerman/__init__.py
+launch/visualization_gazebo.launch.py
+launch/visualization_rviz.launch.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

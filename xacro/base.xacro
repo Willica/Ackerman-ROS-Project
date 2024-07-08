@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!--Macro para las ruedas-->
+    <xacro:macro name="base" params="name m w l h zoff">
+    <link name="${name}">
+        <visual>
+            <origin xyz="0.0 0.0 ${zoff}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${l} ${w} ${h}"/>
+            </geometry>
+            <material name="Blue">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 ${zoff}" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="${l} ${w} ${h}"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}"/>
+            <mass value="${m}"/>
+            <inertia ixx="${(m/12) * (h*h + l*l)}" ixy="0.0" ixz="0.0" iyy="${(m/12) * (w*w + l*l)}" iyz="0.0" izz="${(m/12) * (w*w + h*h)}"/>
+        </inertial>  
+    </link>
+    <gazebo reference="${name}">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    </xacro:macro>   
+</robot>

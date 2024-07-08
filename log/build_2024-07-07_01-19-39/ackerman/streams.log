@@ -1,0 +1,18 @@
+[0.477s] Invoking command in '/home/will/AckermanProject/ackerman': PYTHONPATH=/home/will/AckermanProject/build/ackerman/prefix_override:/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ackerman build --build-base /home/will/AckermanProject/build/ackerman/build install --record /home/will/AckermanProject/build/ackerman/install.log --single-version-externally-managed install_data
+[0.618s] running egg_info
+[0.618s] creating ../build/ackerman/demo_nodos.egg-info
+[0.619s] writing ../build/ackerman/demo_nodos.egg-info/PKG-INFO
+[0.620s] writing dependency_links to ../build/ackerman/demo_nodos.egg-info/dependency_links.txt
+[0.620s] writing entry points to ../build/ackerman/demo_nodos.egg-info/entry_points.txt
+[0.620s] writing requirements to ../build/ackerman/demo_nodos.egg-info/requires.txt
+[0.620s] writing top-level names to ../build/ackerman/demo_nodos.egg-info/top_level.txt
+[0.621s] writing manifest file '../build/ackerman/demo_nodos.egg-info/SOURCES.txt'
+[0.622s] reading manifest file '../build/ackerman/demo_nodos.egg-info/SOURCES.txt'
+[0.623s] writing manifest file '../build/ackerman/demo_nodos.egg-info/SOURCES.txt'
+[0.623s] running build
+[0.623s] running build_py
+[0.623s] running install
+[0.623s] running install_lib
+[0.624s] running install_data
+[0.624s] error: can't copy 'resource/demo_nodos': doesn't exist or not a regular file
+[0.642s] Invoked command in '/home/will/AckermanProject/ackerman' returned '1': PYTHONPATH=/home/will/AckermanProject/build/ackerman/prefix_override:/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ackerman build --build-base /home/will/AckermanProject/build/ackerman/build install --record /home/will/AckermanProject/build/ackerman/install.log --single-version-externally-managed install_data
