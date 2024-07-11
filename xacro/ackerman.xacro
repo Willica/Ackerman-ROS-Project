@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <!--  -->
+
+    <!-- LINKS -->
     
     <!--Se incluyen los archivos xacro-->
     <xacro:include filename="base.xacro"/>
@@ -8,23 +9,26 @@
     <xacro:include filename="steering.xacro"/>
     <xacro:include filename="params.xacro"/>
     <!--Se agrega la base del robot-->
-    <xacro:base name="base_link" m="1500" w="${base_width}" l="${base_length}" h="${base_height}" zoff = "${zoff}"/>
+    <xacro:base name="base_link" m="${base_mass}" w="${base_width}" l="${base_length}" h="${base_height}" zoff = "${zoff}"/>
     <!--Voltantes del robot-->
-    <xacro:steering name="right_wheel_turn" m="1" rad="${steering_radius}" leng="${steering_length}"/>
-    <xacro:steering name="left_wheel_turn"  m="1" rad="${steering_radius}" leng="${steering_length}"/>
-    <xacro:steering name="steering_wheel"   m="1" rad="${steering_radius}" leng="${steering_length}"/>
+    <xacro:steering name="right_wheel_turn" m="${steering_mass}" rad="${steering_radius}" leng="${steering_length}"/>
+    <xacro:steering name="left_wheel_turn"  m="${steering_mass}" rad="${steering_radius}" leng="${steering_length}"/>
+    <xacro:steering name="steering_wheel"   m="${steering_mass}" rad="${steering_radius}" leng="${steering_length}"/>
     <!--Ruedas del robot-->
-    <xacro:wheel name="left_wheel_rear"     m="11" rad="${wheel_radius}" leng="${wheel_width}"/>
-    <xacro:wheel name="right_wheel_rear"    m="11" rad="${wheel_radius}" leng="${wheel_width}"/>
-    <xacro:wheel name="left_wheel_front"    m="11" rad="${wheel_radius}" leng="${wheel_width}"/>
-    <xacro:wheel name="right_wheel_front"   m="11" rad="${wheel_radius}" leng="${wheel_width}"/>
+    <xacro:wheel name="left_wheel_rear"     m="${wheel_mass}" rad="${wheel_radius}" leng="${wheel_width}"/>
+    <xacro:wheel name="right_wheel_rear"    m="${wheel_mass}" rad="${wheel_radius}" leng="${wheel_width}"/>
+    <xacro:wheel name="left_wheel_front"    m="${wheel_mass}" rad="${wheel_radius}" leng="${wheel_width}"/>
+    <xacro:wheel name="right_wheel_front"   m="${wheel_mass}" rad="${wheel_radius}" leng="${wheel_width}"/>
+    
+    <!-- JOINTS -->
+    
     <!--Enlace entre sistema de giro con rueda derecha superior-->
     <joint name="front_right_steer_joint" type="revolute">
         <origin xyz="${(base_length/2.5)} ${-(base_width/2 + wheel_width/2)} ${wheel_radius*2 + steering_length/2}" rpy="0 0.0 0.0"/>
         <parent link="base_link"/>
         <child link="right_wheel_turn"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.6458" upper="0.6458" effort="100" velocity="0.5"/>
+        <limit lower="${lower_limit}" upper="${upper_limit}" effort="100" velocity="0.5"/>
     </joint>
     <!--Enlace entre sistema de giro con rueda izquierda superior-->
     <joint name="front_left_steer_joint" type="revolute">
@@ -32,7 +36,7 @@
         <parent link="base_link"/>
         <child link="left_wheel_turn"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.6458" upper="0.6458" effort="100" velocity="0.5"/>
+        <limit lower="${lower_limit}" upper="${upper_limit}" effort="100" velocity="0.5"/>
     </joint>
     <!--Enlace para el volante de dirección-->
     <joint name="steering_joint" type="continuous">
@@ -70,17 +74,10 @@
         <axis xyz="0.0 1.0 0.0"/>
     </joint>
 
+    <!-- PLUGIN GAZENO ACKERMAN ROBOT -->
+
     <gazebo>
         <plugin name="gazebo_ros_ackermann_drive" filename="libgazebo_ros_ackermann_drive.so">
-
-
-            <!-- <ros>
-                <namespace>demo</namespace>
-                <remapping>cmd_vel:=cmd_demo</remapping>
-                <remapping>odom:=odom_demo</remapping>
-                <remapping>distance:=distance_demo</remapping>
-                <remapping>steerangle:=steerangle_demo</remapping>
-            </ros> -->
 
             <update_rate>400.0</update_rate>
 

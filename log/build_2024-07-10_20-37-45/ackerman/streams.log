@@ -1,0 +1,20 @@
+[0.820s] Invoking command in '/home/will/AckermanProject/ackerman': PYTHONPATH=/home/will/AckermanProject/build/ackerman/prefix_override:/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ackerman build --build-base /home/will/AckermanProject/build/ackerman/build install --record /home/will/AckermanProject/build/ackerman/install.log --single-version-externally-managed install_data
+[1.033s] running egg_info
+[1.034s] writing ../build/ackerman/ackerman.egg-info/PKG-INFO
+[1.035s] writing dependency_links to ../build/ackerman/ackerman.egg-info/dependency_links.txt
+[1.035s] writing entry points to ../build/ackerman/ackerman.egg-info/entry_points.txt
+[1.035s] writing requirements to ../build/ackerman/ackerman.egg-info/requires.txt
+[1.036s] writing top-level names to ../build/ackerman/ackerman.egg-info/top_level.txt
+[1.039s] reading manifest file '../build/ackerman/ackerman.egg-info/SOURCES.txt'
+[1.040s] writing manifest file '../build/ackerman/ackerman.egg-info/SOURCES.txt'
+[1.041s] running build
+[1.041s] running build_py
+[1.041s] running install
+[1.041s] running install_lib
+[1.042s] running install_data
+[1.043s] running install_egg_info
+[1.044s] removing '/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages/ackerman-0.0.0-py3.10.egg-info' (and everything under it)
+[1.045s] Copying ../build/ackerman/ackerman.egg-info to /home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages/ackerman-0.0.0-py3.10.egg-info
+[1.046s] running install_scripts
+[1.105s] writing list of installed files to '/home/will/AckermanProject/build/ackerman/install.log'
+[1.143s] Invoked command in '/home/will/AckermanProject/ackerman' returned '0': PYTHONPATH=/home/will/AckermanProject/build/ackerman/prefix_override:/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ackerman build --build-base /home/will/AckermanProject/build/ackerman/build install --record /home/will/AckermanProject/build/ackerman/install.log --single-version-externally-managed install_data

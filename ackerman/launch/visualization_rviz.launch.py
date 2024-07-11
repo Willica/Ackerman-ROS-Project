@@ -8,9 +8,6 @@ def generate_launch_description():
 
     urdf_path = '/home/will/AckermanProject/xacro/ackerman_plus.xacro'
 
-    with open(urdf_path,'r') as i:
-        robot_desc = i.read()
-
     pub = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
