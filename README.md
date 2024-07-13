@@ -36,7 +36,7 @@ Para arrancar el archivo de visualización se hizo uso de los siguientes comando
 - source install/setup.bash 
 - ros2 launch ackerman visualization_rviz.launch.py
 
->Nota: Del visualization_rviz.launch.py se debe cambiar la ruta escrita en la linea 9 y 28. La primera asociada al archivo XACRO y la segunda a la configutación del RViz.
+>Nota: Del [visualization_rviz.launch.py](https://github.com/Willica/Ackerman-ROS-Project/blob/master/ackerman/launch/visualization_rviz.launch.py) se debe cambiar la ruta escrita en la linea 9 y 28. La primera asociada al archivo XACRO y la segunda a la configutación del RViz.
 
 A continuación se muestra cómo se visualiza:
 
@@ -77,7 +77,7 @@ Para arrancar el archivo de visualización se hizo uso de los siguientes comando
 - source install/setup.bash 
 - ros2 launch ackerman visualization_gazebo.launch.py
 
->Nota: Del visualization_gazebo.launch.py se debe cambiar la ruta escrita en la linea 12, 26 y 44. La primera asociada al archivo XACRO, la segunda al mundo de Gazebo y la tercera al archivo de configuración del RViz.
+>Nota: Del [visualization_gazebo.launch.py](https://github.com/Willica/Ackerman-ROS-Project/blob/master/ackerman/launch/visualization_gazebo.launch.py) se debe cambiar la ruta escrita en la linea 12, 26 y 44. La primera asociada al archivo XACRO, la segunda al mundo de Gazebo y la tercera al archivo de configuración del RViz.
 
 Para operar el robot se debe hacer uso del siguiente comando en otra terminal:
 - ros2 run teleop_twist_keyboard teleop_twist_keyboard
