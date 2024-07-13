@@ -25,7 +25,7 @@ def generate_launch_description():
     )
 
     rviz = ExecuteProcess(
-        cmd=['rviz2', '-d', '/home/will/AckermanProject/rviz_config/config.rviz'],
+        cmd=['rviz2', '-d', '/home/will/AckermanProject/rviz_config/config_basic.rviz'],
         output='screen'
     )
 

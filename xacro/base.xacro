@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <!--Macro para las ruedas-->
+    <!--Macro para la base-->
     <xacro:macro name="base" params="name m w l h zoff">
     <link name="${name}">
         <visual>

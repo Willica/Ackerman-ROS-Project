@@ -1,0 +1,21 @@
+[0.382s] Invoking command in '/home/will/AckermanProject/ackerman': PYTHONPATH=/home/will/AckermanProject/build/ackerman/prefix_override:/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ackerman build --build-base /home/will/AckermanProject/build/ackerman/build install --record /home/will/AckermanProject/build/ackerman/install.log --single-version-externally-managed install_data
+[0.531s] running egg_info
+[0.531s] writing ../build/ackerman/ackerman.egg-info/PKG-INFO
+[0.532s] writing dependency_links to ../build/ackerman/ackerman.egg-info/dependency_links.txt
+[0.532s] writing entry points to ../build/ackerman/ackerman.egg-info/entry_points.txt
+[0.532s] writing requirements to ../build/ackerman/ackerman.egg-info/requires.txt
+[0.540s] writing top-level names to ../build/ackerman/ackerman.egg-info/top_level.txt
+[0.541s] reading manifest file '../build/ackerman/ackerman.egg-info/SOURCES.txt'
+[0.542s] writing manifest file '../build/ackerman/ackerman.egg-info/SOURCES.txt'
+[0.542s] running build
+[0.542s] running build_py
+[0.542s] running install
+[0.542s] running install_lib
+[0.543s] running install_data
+[0.543s] copying launch/visualization_rviz.launch.py -> /home/will/AckermanProject/install/ackerman/share/ackerman/launch/
+[0.544s] running install_egg_info
+[0.545s] removing '/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages/ackerman-0.0.0-py3.10.egg-info' (and everything under it)
+[0.545s] Copying ../build/ackerman/ackerman.egg-info to /home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages/ackerman-0.0.0-py3.10.egg-info
+[0.546s] running install_scripts
+[0.560s] writing list of installed files to '/home/will/AckermanProject/build/ackerman/install.log'
+[0.576s] Invoked command in '/home/will/AckermanProject/ackerman' returned '0': PYTHONPATH=/home/will/AckermanProject/build/ackerman/prefix_override:/home/will/AckermanProject/install/ackerman/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ackerman build --build-base /home/will/AckermanProject/build/ackerman/build install --record /home/will/AckermanProject/build/ackerman/install.log --single-version-externally-managed install_data
