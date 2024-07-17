@@ -82,6 +82,7 @@ Para arrancar el archivo de visualización se hizo uso de los siguientes comando
 >Nota: Del [visualization_gazebo.launch.py](https://github.com/Willica/Ackerman-ROS-Project/blob/master/ackerman/launch/visualization_gazebo.launch.py) se debe cambiar la ruta escrita en la linea 12, 26 y 44. La primera asociada al archivo XACRO, la segunda al mundo de Gazebo y la tercera al archivo de configuración del RViz. Se debe hacer colcon build una vez modificada la dirección.
 
 Para operar el robot se debe hacer uso del siguiente comando en otra terminal:
+- source /opt/ros/iron/setup.bash
 - ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 Al ejecutar el archivo de lanzamiento se ejecutará tanto Gazebo como RViz. El siguiente video [Ackerman Gazebo / RViz](https://www.youtube.com/watch?v=nsB6UI4z3HA) muestra el comportamiento del launch file.
